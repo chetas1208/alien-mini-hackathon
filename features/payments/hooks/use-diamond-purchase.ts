@@ -1,7 +1,7 @@
 "use client";
 
-import { useCallback } from "react";
 import { useAlien, usePayment } from "@alien_org/react";
+import { useCallback } from "react";
 import type { CreateInvoiceResponse } from "../dto";
 
 type UseDiamondPurchaseOptions = {

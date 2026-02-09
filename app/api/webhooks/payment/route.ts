@@ -1,8 +1,9 @@
-import { NextResponse } from "next/server";
-import { eq } from "drizzle-orm";
-import { getServerEnv } from "@/lib/env";
+import { activateAgentByInvoice, logAgentActivity } from "@/features/auction/queries";
 import { WebhookPayload } from "@/features/payments/dto";
 import { db, schema } from "@/lib/db";
+import { getServerEnv } from "@/lib/env";
+import { eq } from "drizzle-orm";
+import { NextResponse } from "next/server";
 
 async function verifySignature(
   publicKeyHex: string,
@@ -97,6 +98,19 @@ export async function POST(request: Request) {
         payload,
       });
     });
+
+    // If payment succeeded, check if this invoice is linked to an agent and activate it
+    if (payload.status === "finalized") {
+      const agent = await activateAgentByInvoice(payload.invoice);
+      if (agent) {
+        await logAgentActivity({
+          agentId: agent.id,
+          eventType: "activated",
+          message: `${agent.name} is now live — payment confirmed on Solana`,
+          metadata: { txHash: payload.txHash, invoice: payload.invoice },
+        });
+      }
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

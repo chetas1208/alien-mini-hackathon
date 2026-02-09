@@ -1,0 +1,209 @@
+[
+  {
+    "card_id": "SB-LX-001",
+    "player_name": "Sam Darnold",
+    "team": "Seattle Seahawks",
+    "position": "QB",
+    "strength_attribute": "Arm Strength",
+    "strength_value": 94,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-002",
+    "player_name": "Drake Maye",
+    "team": "New England Patriots",
+    "position": "QB",
+    "strength_attribute": "Accuracy",
+    "strength_value": 95,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-003",
+    "player_name": "Devon Witherspoon",
+    "team": "Seattle Seahawks",
+    "position": "CB",
+    "strength_attribute": "Coverage",
+    "strength_value": 97,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-004",
+    "player_name": "Christian Barmore",
+    "team": "New England Patriots",
+    "position": "DL",
+    "strength_attribute": "Power Move",
+    "strength_value": 96,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-005",
+    "player_name": "Kenneth Walker III",
+    "team": "Seattle Seahawks",
+    "position": "RB",
+    "strength_attribute": "Elusiveness",
+    "strength_value": 92,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-006",
+    "player_name": "Rhamondre Stevenson",
+    "team": "New England Patriots",
+    "position": "RB",
+    "strength_attribute": "Trucking",
+    "strength_value": 91,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-007",
+    "player_name": "Jaxon Smith-Njigba",
+    "team": "Seattle Seahawks",
+    "position": "WR",
+    "strength_attribute": "Route Running",
+    "strength_value": 93,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-008",
+    "player_name": "Hunter Henry",
+    "team": "New England Patriots",
+    "position": "TE",
+    "strength_attribute": "Catch In Traffic",
+    "strength_value": 88,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-009",
+    "player_name": "Uchenna Nwosu",
+    "team": "Seattle Seahawks",
+    "position": "EDGE",
+    "strength_attribute": "Speed Rush",
+    "strength_value": 89,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-010",
+    "player_name": "Kyle Dugger",
+    "team": "New England Patriots",
+    "position": "S",
+    "strength_attribute": "Tackling",
+    "strength_value": 93,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-011",
+    "player_name": "Michael Dickson",
+    "team": "Seattle Seahawks",
+    "position": "P",
+    "strength_attribute": "Kick Power",
+    "strength_value": 94,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-012",
+    "player_name": "Bryce Baringer",
+    "team": "New England Patriots",
+    "position": "P",
+    "strength_attribute": "Kick Power",
+    "strength_value": 94,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-013",
+    "player_name": "Boye Mafe",
+    "team": "Seattle Seahawks",
+    "position": "LB",
+    "strength_attribute": "Pass Rush",
+    "strength_value": 88,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-014",
+    "player_name": "Jahlani Tavai",
+    "team": "New England Patriots",
+    "position": "LB",
+    "strength_attribute": "Run Stop",
+    "strength_value": 87,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-015",
+    "player_name": "Riq Woolen",
+    "team": "Seattle Seahawks",
+    "position": "CB",
+    "strength_attribute": "Coverage",
+    "strength_value": 91,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-016",
+    "player_name": "Christian Gonzalez",
+    "team": "New England Patriots",
+    "position": "CB",
+    "strength_attribute": "Man Coverage",
+    "strength_value": 90,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-017",
+    "player_name": "Charles Cross",
+    "team": "Seattle Seahawks",
+    "position": "LT",
+    "strength_attribute": "Pass Block",
+    "strength_value": 91,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-018",
+    "player_name": "Mike Onwenu",
+    "team": "New England Patriots",
+    "position": "RG",
+    "strength_attribute": "Run Block",
+    "strength_value": 92,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-019",
+    "player_name": "Leonard Williams",
+    "team": "Seattle Seahawks",
+    "position": "DL",
+    "strength_attribute": "Run Stop",
+    "strength_value": 94,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-020",
+    "player_name": "Jabrill Peppers",
+    "team": "New England Patriots",
+    "position": "S",
+    "strength_attribute": "Versatility",
+    "strength_value": 89,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-021",
+    "player_name": "DK Metcalf",
+    "team": "Seattle Seahawks",
+    "position": "WR",
+    "strength_attribute": "Size/Speed Combo",
+    "strength_value": 98,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-022",
+    "player_name": "Julian Love",
+    "team": "Seattle Seahawks",
+    "position": "S",
+    "strength_attribute": "Ball Skills",
+    "strength_value": 92,
+    "image_orientation": "Vertical"
+  },
+  {
+    "card_id": "SB-LX-023",
+    "player_name": "Matthew Judon",
+    "team": "New England Patriots",
+    "position": "EDGE",
+    "strength_attribute": "Pass Rush",
+    "strength_value": 95,
+    "image_orientation": "Vertical"
+  }
+]

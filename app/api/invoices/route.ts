@@ -1,13 +1,13 @@
-import { NextResponse } from "next/server";
-import { randomUUID } from "crypto";
-import { verifyToken, extractBearerToken } from "@/features/auth/lib";
-import { JwtErrors } from "@alien_org/auth-client";
-import { CreateInvoiceRequest } from "@/features/payments/dto";
-import { createPaymentIntent } from "@/features/payments/queries";
+import { extractBearerToken, verifyToken } from "@/features/auth/lib";
 import {
   DIAMOND_PRODUCTS,
   TEST_DIAMOND_PRODUCTS,
 } from "@/features/payments/constants";
+import { CreateInvoiceRequest } from "@/features/payments/dto";
+import { createPaymentIntent } from "@/features/payments/queries";
+import { JwtErrors } from "@alien_org/auth-client";
+import { randomUUID } from "crypto";
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
@@ -40,6 +40,13 @@ export async function POST(request: Request) {
     if (!product) {
       return NextResponse.json(
         { error: "Invalid product" },
+        { status: 400 },
+      );
+    }
+
+    if (!product.recipientAddress) {
+      return NextResponse.json(
+        { error: "Payment not available for this product — recipient address not configured" },
         { status: 400 },
       );
     }

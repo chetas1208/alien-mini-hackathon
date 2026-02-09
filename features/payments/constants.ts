@@ -20,8 +20,8 @@ export type DiamondProduct = {
 
 const ICON_URL = "https://avatars.githubusercontent.com/u/40111175?s=40&v=4";
 
-const SOLANA_RECIPIENT = process.env.NEXT_PUBLIC_RECIPIENT_ADDRESS!;
-const ALIEN_RECIPIENT = process.env.NEXT_PUBLIC_ALIEN_RECIPIENT_ADDRESS!;
+const SOLANA_RECIPIENT = process.env.NEXT_PUBLIC_RECIPIENT_ADDRESS ?? "";
+const ALIEN_RECIPIENT = process.env.NEXT_PUBLIC_ALIEN_RECIPIENT_ADDRESS ?? "";
 
 export const DIAMOND_PRODUCTS: DiamondProduct[] = [
   {

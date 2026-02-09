@@ -1,16 +1,16 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
 import { useAlien } from "@alien_org/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useCallback, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import {
-  DIAMOND_PRODUCTS,
-  TEST_DIAMOND_PRODUCTS,
-  type DiamondProduct,
+    DIAMOND_PRODUCTS,
+    TEST_DIAMOND_PRODUCTS,
+    type DiamondProduct,
 } from "../constants";
-import { useDiamondPurchase } from "../hooks/use-diamond-purchase";
 import { TransactionDTO } from "../dto";
+import { useDiamondPurchase } from "../hooks/use-diamond-purchase";
 
 type Tab = "real" | "test";
 
@@ -249,7 +249,9 @@ export function DiamondStore() {
   };
 
   const products =
-    activeTab === "test" ? TEST_DIAMOND_PRODUCTS : DIAMOND_PRODUCTS;
+    activeTab === "test"
+      ? TEST_DIAMOND_PRODUCTS.filter((p) => p.recipientAddress)
+      : DIAMOND_PRODUCTS.filter((p) => p.recipientAddress);
   const canBuy = !!authToken && isBridgeAvailable && !isLoading;
 
   return (

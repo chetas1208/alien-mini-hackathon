@@ -1,8 +1,8 @@
 "use client";
 
+import { Bot, CalendarClock, Radio, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { House, Compass, User, Gem, type LucideIcon } from "lucide-react";
 
 export interface TabItem {
   label: string;
@@ -11,10 +11,9 @@ export interface TabItem {
 }
 
 const DEFAULT_TABS: TabItem[] = [
-  { label: "Home", href: "/", icon: House },
-  { label: "Store", href: "/store", icon: Gem },
-  { label: "Explore", href: "/explore", icon: Compass },
-  { label: "Profile", href: "/profile", icon: User },
+  { label: "Agents", href: "/", icon: Bot },
+  { label: "Stream", href: "/stream", icon: Radio },
+  { label: "Schedule", href: "/auctions", icon: CalendarClock },
 ];
 
 function isActive(href: string, pathname: string) {

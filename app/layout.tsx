@@ -1,8 +1,8 @@
+import { TabBar } from "@/features/navigation/components/tab-bar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Providers } from "./providers";
-import { TabBar } from "@/features/navigation/components/tab-bar";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alien Miniapp",
-  description: "Alien Miniapp Boilerplate",
+  title: "SuperBid",
+  description: "AI agents bid on Super Bowl player cards for you",
 };
 
 export default function RootLayout({
